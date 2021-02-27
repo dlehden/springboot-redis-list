@@ -44,6 +44,7 @@ public class RedisLpushController {
 	     * redist lpush 를이용한  최근 방문 기록 
 	     * key 값으론 로그인 id 로 ,   0 , max_size-1 (ex) 0 ,4 ) 5개 까지 
 	     *  1,2,3,4,5 set 으로 들어갈시 redist lpush 로 들어가면 5,4,3,2,1 로 왼쪽부터 등록 
+	     *  list 중복 문제가 있어서 확인 해야함.
 	     */
 	    public void setScore(String nid, String Url){
 	    	logger.info(Url);

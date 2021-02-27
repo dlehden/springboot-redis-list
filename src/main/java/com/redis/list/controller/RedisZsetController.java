@@ -31,6 +31,9 @@ public class RedisZsetController {
 	        batchAdd();
 
 	    }
+	    /*
+	     * score 단위로 리스트를 만들수 있음.
+	     */
 	    
 	    @GetMapping("/batch")
 	    public void batchAdd() {
